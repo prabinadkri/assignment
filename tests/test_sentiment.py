@@ -9,7 +9,8 @@ def test_homepage():
     assert "Text Summarizer" in response.text
 
 def test_summarize_short_text():
-    response = client.post("/summarize", data={"text": "Too short to summarize."})
+    response = client.post("/summarize", data={"text": "Too short "
+    "to summarize."})
     assert response.status_code == 200
     assert "Text too short to summarize" in response.text
 
