@@ -123,7 +123,3 @@ Simplifies running the app with one command and loads `.env`.
 
 ---
 
-```
-
-Let me know if you'd like badges or deployment instructions added.
-```
