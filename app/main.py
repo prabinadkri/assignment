@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from fastapi.staticfiles import StaticFiles
 import os
 
-load_dotenv()
+ load_dotenv()
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
