@@ -4,7 +4,6 @@ from fastapi.templating import Jinja2Templates
 from app.summarizer import summarize_text
 from dotenv import load_dotenv
 from fastapi.staticfiles import StaticFiles
-import os
 load_dotenv()
 
 app = FastAPI()
