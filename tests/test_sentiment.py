@@ -15,9 +15,12 @@ def test_summarize_short_text():
 
 def test_summarize_valid_text():
     long_text = (
-        "Machine learning is a method of data analysis that automates analytical model building. "
-        "It is a branch of artificial intelligence based on the idea that systems can learn from data, "
-        "identify patterns and make decisions with minimal human intervention."
+        "Machine learning is a method of data analysis 
+        that automates analytical model building. "
+        "It is a branch of artificial intelligence 
+        based on the idea that systems can learn from data, "
+        "identify patterns and make decisions 
+        with minimal human intervention."
     )
     response = client.post("/summarize", data={"text": long_text})
     assert response.status_code == 200
